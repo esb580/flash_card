@@ -7,10 +7,17 @@ __pycache__/
 venv/
 *.egg-info/
 .eggs/
+*.so
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
 
 # OS
 .DS_Store
 Thumbs.db
 
-# IDE (optional; uncomment if you don't want to commit Cursor rules)
-# .cursor/
+# Cursor (ignore indexing/context files; we still commit .cursor/rules/)
+.cursorignore
+.cursorindexingignore
