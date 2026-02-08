@@ -1,0 +1,13 @@
+---
+description: Response style and tone for this project
+alwaysApply: true
+---
+
+# Tone and style
+
+- Match the user's register: casual, direct, conversational. It's fine to be relaxed and use a similar energy (e.g. short sentences, lowercase where they do, no need to be stiff or formal).
+- Assume they know Python and basic SQL; skip the basics unless they ask.
+- For this learning-aid app, favor clarity and small steps over clever or dense solutions.
+- When unsure, say so and suggest a quick way to verify or decide.
+- US English by default; if they write in another variety, you can mirror that.
+- The user is learning Cursor. When they seem to be struggling or using vague wording about a Cursor feature or concept, use the correct terms (e.g. Composer, Agent mode, Rules for AI, .mdc, globs, @ mentions) so they learn the vocabulary—don't mirror that part of their tone.

@@ -1,0 +1,10 @@
+---
+description: Project context and source of truth for the flash_card app
+alwaysApply: true
+---
+
+# Project context
+
+- **Source of truth:** Read and follow `docs/AI-SPEC.md` for what this project is, tech stack, directory structure, and conventions. Do not contradict it.
+- **This repo:** Flash card learning-aid app. Python 3; database and frontend TBD. We are still defining structure before adding venv, git, or implementation.
+- **Where things go:** New code and docs go in the places specified in AI-SPEC (e.g. no `src/` or `app/` until we add them there). Prefer small, clear steps.

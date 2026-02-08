@@ -1,0 +1,81 @@
+{
+  "topic": "ai-learning",
+  "title": "AI & Cursor basics",
+  "cards": [
+    {
+      "id": "cursor-rules-format",
+      "question": "What does a default Cursor rules file look like?",
+      "answer": "A .mdc file in .cursor/rules/ with YAML frontmatter: description, optional globs, optional alwaysApply. Then markdown body. Use alwaysApply: true for project-wide rules, globs for file-specific (e.g. **/*.py)."
+    },
+    {
+      "id": "model-identity",
+      "question": "How do you know what model you're talking to in Cursor?",
+      "answer": "You're talking to Auto (Cursor's agent router). To see or change the model: check the chat header or model selector near the input, or Cursor Settings → Models. Claude may only appear when Auto is selected."
+    },
+    {
+      "id": "composer-resize",
+      "question": "Why doesn't Composer have a resize handle?",
+      "answer": "Cursor doesn't give Composer a drag handle—it's a known limitation. You can try dragging the divider; otherwise use full-screen Composer or increase font size for readability."
+    },
+    {
+      "id": "chat-ui-inputs",
+      "question": "What's the difference between the top and bottom input in Cursor chat?",
+      "answer": "Bottom = compose the next message; it 'moves' to the thread when you send. Top = often 'new chat' or the same thread. You can edit a past message in the thread; the AI will re-answer from that point."
+    },
+    {
+      "id": "cursor-vs-editors",
+      "question": "How is Cursor different from VS Code and PyCharm?",
+      "answer": "Cursor is VS Code with AI built in—same keybindings and extensions. Composer/Agent can edit multiple files and run commands. Vs PyCharm: Cursor is weaker on deep Python tooling but stronger on natural-language-driven, multi-file implementation."
+    },
+    {
+      "id": "cursor-vs-copilot",
+      "question": "What's the main difference between Cursor and Copilot in VS Code?",
+      "answer": "Copilot suggests; you apply and run everything. Cursor's Composer can edit many files, run the terminal, and fix errors in a loop—agentic, project-aware work vs suggest-and-you-execute."
+    },
+    {
+      "id": "composer-modes",
+      "question": "What are the Composer modes (Agent, Ask, Plan, Debug) for?",
+      "answer": "Agent = full tools (edit files, terminal, search). Ask = read-only (search, answer, suggest code; no edits or terminal). Plan = plan first, then execute. Debug = same as Agent but tuned for bugs (hypotheses, logs, debugger)."
+    },
+    {
+      "id": "persona-rules",
+      "question": "How do you give the AI a different persona or style?",
+      "answer": "Global: Cursor Settings → General → Rules for AI (one box for all projects). Project: .cursor/rules/*.mdc (e.g. tone.mdc). Put things like 'respond as a terse senior dev' or 'use casual pair-programmer style' in either place."
+    },
+    {
+      "id": "rules-vs-aispec",
+      "question": "What's the advantage of rules vs storing everything in docs/AI-SPEC.md?",
+      "answer": "AI-SPEC is only in context when opened or @'d. Rules are automatically injected when they apply (always or by glob). So rules make the AI reliably follow the spec; use AI-SPEC as the single source of truth and a rule that says 'read and follow AI-SPEC.'"
+    },
+    {
+      "id": "project-context-rule",
+      "question": "What does project-context.mdc do?",
+      "answer": "Tells the AI to read and follow docs/AI-SPEC.md, summarizes the repo (flash card app, Python, structure-only for now), and says new code/docs go where AI-SPEC says. Keeps the spec reliably in play."
+    },
+    {
+      "id": "common-rule-files",
+      "question": "Name some common .cursor/rules file names and what they're for.",
+      "answer": "project-context (source of truth, AI-SPEC), tone (response style), conventions (naming/formatting), python-conventions (globs **/*.py), testing (how to write tests), security (secrets, input), api-conventions, git (commits, branches)."
+    },
+    {
+      "id": "composer-agent-mode",
+      "question": "What does Agent mode do in Composer?",
+      "answer": "Full tools: edit files, run terminal, search codebase, create or modify files. Use when you want the AI to implement or refactor."
+    },
+    {
+      "id": "composer-ask-mode",
+      "question": "What does Ask mode do in Composer?",
+      "answer": "Read-only: search codebase and docs, answer questions, suggest code. It does not edit files or run the terminal."
+    },
+    {
+      "id": "composer-plan-mode",
+      "question": "What does Plan mode do in Composer?",
+      "answer": "Plans first (steps, options, maybe clarifying questions), then can execute. Good for features or how do we get from A to B."
+    },
+    {
+      "id": "composer-debug-mode",
+      "question": "What does Debug mode do in Composer?",
+      "answer": "Same tools as Agent but tuned for bugs: hypotheses, log instrumentation, debugger. For why is this failing."
+    }
+  ]
+}
