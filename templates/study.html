@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}{{ topic_title }} – Flash Card{% endblock %}
+{% block content %}
+<header class="study-header">
+  <a href="{{ url_for('index') }}">← Topics</a>
+  <span class="card-count">Card {{ card_num }} of {{ total }}</span>
+</header>
+
+<div class="card">
+  <div class="card-question">{{ card.question }}</div>
+  <div class="card-answer hidden" id="answer">{{ card.answer }}</div>
+  <div class="card-actions">
+    <button type="button" id="reveal" aria-expanded="false">Reveal answer</button>
+    <a href="{{ url_for('next_card', topic_id=topic_id) }}" class="btn-next">Next card</a>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var reveal = document.getElementById('reveal');
+    var answer = document.getElementById('answer');
+    if (!reveal || !answer) return;
+    reveal.addEventListener('click', function () {
+      var hidden = answer.classList.toggle('hidden');
+      reveal.textContent = hidden ? 'Reveal answer' : 'Hide answer';
+      reveal.setAttribute('aria-expanded', !hidden);
+    });
+  })();
+</script>
+{% endblock %}

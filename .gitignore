@@ -18,6 +18,11 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
+# Flask
+instance/
+*.log
+.webassets-cache
+
 # Cursor (ignore indexing/context files; we still commit .cursor/rules/)
 .cursorignore
 .cursorindexingignore

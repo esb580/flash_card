@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Flash Card – Pick a topic{% endblock %}
+{% block content %}
+<h1>Flash Card</h1>
+<p>Choose a topic to study.</p>
+<ul class="topic-list">
+  {% for t in topics %}
+  <li><a href="{{ url_for('study', topic_id=t.topic) }}">{{ t.title }}</a></li>
+  {% else %}
+  <li>No topics found. Add JSON decks in <code>topics/</code>.</li>
+  {% endfor %}
+</ul>
+{% endblock %}

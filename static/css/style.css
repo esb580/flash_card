@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #1a1a1a;
+  background: #87ceeb;
+}
+
+main {
+  min-height: 60vh;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.topic-list {
+  list-style: none;
+  padding: 0;
+}
+
+.topic-list li {
+  margin: 0.5rem 0;
+}
+
+.topic-list a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  background: #e0e0e0;
+  color: #111;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+.topic-list a:hover {
+  background: #ccc;
+}
+
+.study-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.study-header a {
+  color: #333;
+  text-decoration: none;
+}
+
+.study-header a:hover {
+  text-decoration: underline;
+}
+
+.card-count {
+  font-size: 0.875rem;
+  color: #333;
+}
+
+/* 5" x 3" at 96dpi = 480px x 288px (landscape) */
+.card {
+  width: 480px;
+  min-height: 288px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  /* Ruled lines: horizontal rules via CSS, no image */
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 0,
+    transparent 27px,
+    rgba(0, 0, 0, 0.08) 27px,
+    rgba(0, 0, 0, 0.08) 28px
+  );
+  padding: 1rem 1.25rem 1rem;
+}
+
+.card-question {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  flex: 1 1 auto;
+}
+
+.card-answer {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.85);
+  border-left: 3px solid #555;
+  padding-left: 0.5rem;
+}
+
+.card-answer.hidden {
+  display: none;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-actions button,
+.card-actions .btn-next {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  border: 1px solid #888;
+  background: #f0f0f0;
+  color: #111;
+}
+
+.card-actions button:hover,
+.card-actions .btn-next:hover {
+  background: #e0e0e0;
+}
+
+.card-actions .btn-next {
+  text-decoration: none;
+  display: inline-block;
+}
