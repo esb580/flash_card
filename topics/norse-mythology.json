@@ -1,0 +1,106 @@
+{
+  "topic": "norse-mythology",
+  "title": "Norse Mythology",
+  "cards": [
+    {
+      "id": "yggdrasil",
+      "question": "What is Yggdrasil?",
+      "answer": "The world tree—a giant ash that connects the Nine Worlds. Its roots reach to Asgard, Jotunheim, and Niflheim; its branches hold the cosmos. Odin hung on it for nine nights to gain the runes."
+    },
+    {
+      "id": "odin",
+      "question": "Who is Odin and what is he known for?",
+      "answer": "The All-Father; chief of the Aesir. God of wisdom, war, poetry, and death. Gave one eye for a drink from Mimir's well; has two ravens, Huginn (thought) and Muninn (memory). Rides the eight-legged horse Sleipnir."
+    },
+    {
+      "id": "thor",
+      "question": "Who is Thor and what is his hammer?",
+      "answer": "God of thunder, strength, and protection; son of Odin. Wields Mjolnir, a hammer that returns to his hand and never misses. Fights giants and the serpent Jormungand. Associated with the oak and Thursday."
+    },
+    {
+      "id": "loki",
+      "question": "Who is Loki in Norse myth?",
+      "answer": "A shape-shifting trickster; sometimes counted among the Aesir, sometimes their enemy. Father of Fenrir, Jormungand, and Hel. Caused Baldr's death and is bound until Ragnarok, when he will break free and fight the gods."
+    },
+    {
+      "id": "ragnarok",
+      "question": "What is Ragnarok?",
+      "answer": "The doom of the gods—a great battle and cosmic destruction. Fenrir swallows Odin; Thor kills Jormungand but dies from its venom; Loki and Heimdall kill each other. The world is consumed by fire (Surtur) and then reborn."
+    },
+    {
+      "id": "nine-worlds",
+      "question": "Name some of the Nine Worlds in Norse cosmology.",
+      "answer": "Asgard (gods), Midgard (humans), Jotunheim (giants), Niflheim (ice/mist), Muspelheim (fire), Helheim (dead), Alfheim (light elves), Svartalfheim (dwarves), Vanaheim (Vanir gods)."
+    },
+    {
+      "id": "valkyries",
+      "question": "What are Valkyries?",
+      "answer": "Female figures who choose who dies in battle and who lives. They bring the slain to Valhalla (Odin's hall), where warriors feast until Ragnarok. Often shown as armed women on horses; 'valkyrie' means 'chooser of the slain.'"
+    },
+    {
+      "id": "valhalla",
+      "question": "What is Valhalla?",
+      "answer": "Odin's hall in Asgard where half of those who die in battle go (the other half go to Freya's field Folkvangr). The einherjar fight by day and feast by night until they march out at Ragnarok."
+    },
+    {
+      "id": "fenrir",
+      "question": "Who or what is Fenrir?",
+      "answer": "A monstrous wolf, son of Loki. The gods bound him with a magical fetter (Gleipnir) because of a prophecy that he would harm them. At Ragnarok he breaks free and kills Odin; Odin's son Vidarr then kills Fenrir."
+    },
+    {
+      "id": "jormungand",
+      "question": "What is Jormungand?",
+      "answer": "The Midgard Serpent—a giant snake, child of Loki, that encircles the world and bites its own tail. Thor fishes for it and nearly pulls it up. At Ragnarok Thor kills it but dies from its venom."
+    },
+    {
+      "id": "freya",
+      "question": "Who is Freya?",
+      "answer": "A Vanir goddess of love, beauty, fertility, and war. Receives half the battle-dead in her field Folkvangr. Owns the necklace Brisingamen and a cloak of falcon feathers. Friday is named after her."
+    },
+    {
+      "id": "baldr",
+      "question": "Who is Baldr and how does he die?",
+      "answer": "The fairest and most beloved of the Aesir; son of Odin and Frigg. He is killed by a mistletoe dart—Loki tricked the blind god Hodr into throwing it. Baldr stays in Hel until after Ragnarok, when he returns to the new world."
+    },
+    {
+      "id": "bifrost",
+      "question": "What is Bifrost?",
+      "answer": "The burning rainbow bridge that connects Midgard (earth) to Asgard. Heimdall guards it. At Ragnarok it breaks when the sons of Muspell ride over it to attack the gods."
+    },
+    {
+      "id": "norns",
+      "question": "Who are the Norns?",
+      "answer": "Fates who shape destiny. They live by the well beneath Yggdrasil. Often three are named: Urd (past), Verdandi (present), Skuld (future). They carve runes and water the world tree; even the gods are subject to them."
+    },
+    {
+      "id": "mjolnir",
+      "question": "What is Mjolnir?",
+      "answer": "Thor's hammer. Forged by dwarves; so heavy only Thor can lift it. It returns to his hand after being thrown and never misses. Symbol of protection and blessing; often worn as an amulet. Stolen by the giant Thrym until Loki and Thor recover it."
+    },
+    {
+      "id": "heimdall",
+      "question": "Who is Heimdall?",
+      "answer": "The watchman of the gods. Guards Bifrost; can see and hear over great distances. Sounds the horn Gjallarhorn at the start of Ragnarok. Fights and kills Loki in their final encounter. Sometimes called the 'whitest of the gods.'"
+    },
+    {
+      "id": "runes",
+      "question": "What are runes in Norse myth?",
+      "answer": "A writing system and magical symbols. Odin is said to have won them by sacrificing himself on Yggdrasil for nine nights. They were used for writing and for divination, charms, and ritual. The runic alphabet is often called the futhark."
+    },
+    {
+      "id": "surtur",
+      "question": "Who is Surtur and what does he do at Ragnarok?",
+      "answer": "A fire giant (or jötunn) from Muspelheim. At Ragnarok he leads the sons of Muspell across Bifrost with a flaming sword and sets the world ablaze. The cosmos is destroyed by fire before a new world rises."
+    },
+    {
+      "id": "hel",
+      "question": "Who is Hel and what is Helheim?",
+      "answer": "Hel is Loki's daughter, ruler of the dead. She is half alive and half corpse. Helheim (or Hel) is the underworld where those who did not die in battle go—a cold, gloomy realm. Baldr is held there until after Ragnarok."
+    },
+    {
+      "id": "creation-myth",
+      "question": "How was the world created in Norse myth?",
+      "answer": "In the void Ginnungagap, fire from Muspelheim met ice from Niflheim. The giant Ymir formed from the melting ice; from him the gods created the world. Odin and his brothers killed Ymir and made the earth from his body, the sea from his blood, the sky from his skull."
+    }
+  ]
+}
