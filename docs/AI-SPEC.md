@@ -33,7 +33,7 @@ A small learning-aid app: flash cards in the browser. User picks a topic (deck),
 ```
 flash_card/
   app.py                 # Flask app: routes /, /study/<id>, /study/<id>/next
-  config.py              # TOPICS_DIR, SECRET_KEY (env or defaults)
+  config.py              # TOPICS_DIR, SECRET_KEY, RUN_HOST, RUN_PORT (env or defaults)
   load_topics.py         # load_topics(), get_topic(id) — reads topics/*.json
   requirements.txt       # flask (only dependency so far)
   .venv/                 # Virtual env (do not commit)
@@ -62,11 +62,13 @@ flash_card/
 
 ## Flask app: what you need to maintain it
 
-**Entry point:** `app.py`. Run with:
-`flask --app app run --host=127.0.0.1 --port=5001`
-(or from repo root: `.venv/bin/flask --app app run --host=127.0.0.1 --port=5001`)
+**Entry point:** `app.py`. Run on port 5001 with either:
+- `flask --app app run --host=127.0.0.1 --port=5001`
+- `python app.py` (uses `config.RUN_HOST` / `config.RUN_PORT`, default 0.0.0.0:5001)
 
-**Config:** `config.py` reads env: `FLASH_CARD_TOPICS` (default: repo `topics/`), `SECRET_KEY` (for session cookie). Override for different data dir or production.
+From repo root: `.venv/bin/flask --app app run --host=127.0.0.1 --port=5001` or `.venv/bin/python app.py`.
+
+**Config:** `config.py` reads env: `FLASH_CARD_TOPICS` (default: repo `topics/`), `SECRET_KEY`, `FLASK_RUN_HOST` / `FLASK_RUN_PORT` (default 0.0.0.0:5001). Override for different data dir or production.
 
 **Data flow:** `load_topics()` returns all decks from `topics/*.json`. `get_topic(topic_id)` loads `topics/<topic_id>.json`. Each deck must have `topic`, `title`, `cards`; each card has `id`, `question`, `answer`.
 

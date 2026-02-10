@@ -1,0 +1,17 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.git/
+.gitignore
+docs/
+.cursor/
+*.md
+.pytest_cache/
+htmlcov/
+.coverage
+instance/
+*.log
+.DS_Store
+Thumbs.db

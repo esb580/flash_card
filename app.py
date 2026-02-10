@@ -1,7 +1,7 @@
-"""Flash card web app. Run with: flask --app app run"""
+"""Flash card web app. Run with: flask --app app run or python app.py"""
 from flask import Flask, render_template, session, redirect, url_for
 
-from config import SECRET_KEY
+from config import SECRET_KEY, RUN_HOST, RUN_PORT
 from load_topics import load_topics, get_topic
 
 app = Flask(__name__)
@@ -52,3 +52,7 @@ def next_card(topic_id):
         session["card_index"] = 0
     session["card_index"] = session.get("card_index", 0) + 1
     return redirect(url_for("study", topic_id=topic_id))
+
+
+if __name__ == "__main__":
+    app.run(host=RUN_HOST, port=RUN_PORT)

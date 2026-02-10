@@ -23,6 +23,11 @@ instance/
 *.log
 .webassets-cache
 
-# Cursor (ignore indexing/context files; we still commit .cursor/rules/)
+# Cursor (we commit .cursor/rules/; ignore the rest)
 .cursorignore
 .cursorindexingignore
+.cursor/plans/
+
+# Local env overrides (may contain secrets)
+.env.local
+.env.*.local
